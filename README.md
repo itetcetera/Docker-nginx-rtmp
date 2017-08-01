@@ -5,7 +5,7 @@ NGINX Version 1.9.15
 nginx-rtmp-module Version 1.1.7
 
 ### Configurations
-This image exposes port 1935 for RTMP Steams and has 2 channels open "live" and "testing".
+This image exposes port 1935 for RTMP Steams and has 7 channels open "live" and "stream1" -> "stream6".
 
 Live is also accessable via HLS on port 8080
 
@@ -17,7 +17,7 @@ The configuration file is in /opt/nginx/conf/
 
 To run the container and bind the port 1935 to the host machine; run the following:
 ```
-docker run -p 1935:1935 -p 8080:8080 jasonrivers/nginx-rtmp
+docker run -p 1935:1935 -p 8080:8080 steventhegeek/nginx-rtmp
 ```
 
 ### OBS Configuration
